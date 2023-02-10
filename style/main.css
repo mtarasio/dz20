@@ -304,7 +304,7 @@ image {
 }
 
 .image2 {
-  background: #565656 url("../img/image2b.jpg") top center/100% 100% no-repeat;
+  background: #565656 url("../img/Image2b.jpg") top center/100% 100% no-repeat;
   height: 500px;
   margin-bottom: 90px;
 }
@@ -361,7 +361,7 @@ image {
 }
 
 .section-footer {
-  background: #F4F4F4;
+  background: #f4f4f4;
 }
 .section-footer__title {
   margin-bottom: 30px;
@@ -478,7 +478,7 @@ image {
 .list-item {
   border: 1px solid #565656;
   padding: 13px;
-  background: #F4F4F4;
+  background: #f4f4f4;
 }
 
 .list-item:hover {
