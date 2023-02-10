@@ -1,0 +1,33 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+   &::before,
+   &::after {
+      box-sizing: border-box;
+      
+   }
+}
+
+ul,
+ol {
+   padding: 0;
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+button {
+   border: none;
+}
+
+image {
+   display: block;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}

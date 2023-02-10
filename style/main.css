@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+image {
+  display: block;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-BlackItalic.woff2") format("woff2"), url("../fonts/Lato-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Italic.woff2") format("woff2"), url("../fonts/Lato-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-LightItalic.woff2") format("woff2"), url("../fonts/Lato-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-BoldItalic.woff2") format("woff2"), url("../fonts/Lato-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato Hairline";
+  src: url("../fonts/Lato-Hairline.woff2") format("woff2"), url("../fonts/Lato-Hairline.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato Hairline";
+  src: url("../fonts/Lato-HairlineItalic.woff2") format("woff2"), url("../fonts/Lato-HairlineItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Black.woff2") format("woff2"), url("../fonts/RedHatDisplay-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-MediumItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Italic.woff2") format("woff2"), url("../fonts/RedHatDisplay-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-BlackItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-ExtraBold.woff2") format("woff2"), url("../fonts/RedHatDisplay-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-LightItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Bold.woff2") format("woff2"), url("../fonts/RedHatDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Medium.woff2") format("woff2"), url("../fonts/RedHatDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Light.woff2") format("woff2"), url("RedHatDisplay-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-SemiBold.woff2") format("woff2"), url("../fonts/RedHatDisplay-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-SemiBoldItalic.woff2") format("woff2"), url("../fonts/RedHatDisplay-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Regular.woff2") format("woff2"), url("../fonts/RedHatDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 1199px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 767px;
+    padding: 0 10px;
+  }
+}
+
+.logo {
+  margin: 38px auto;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  color: #000000;
+}
+
+.title {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+@media screen and (max-width: 1199px) {
+  .title {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+.main-caption {
+  margin-bottom: 50px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .main-caption {
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+}
+
+.main-description {
+  margin-bottom: 90px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+@media screen and (max-width: 767px) {
+  .main-description {
+    margin-bottom: 70px;
+    font-size: 16px;
+  }
+}
+
+.image1 {
+  background: #565656 url("/img/image1b.jpg") top center/100% 100% no-repeat;
+  height: 500px;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 1199px) {
+  .image1 {
+    background: #565656 url("/img/image1m.jpg") top center/100% 100% no-repeat;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .image1 {
+    background: #565656 url("/img/image1s.jpg") top center/100% 100% no-repeat;
+    height: 300px;
+    margin-bottom: 70px;
+  }
+}
+
+.image2 {
+  background: #565656 url("/img/image2b.jpg") top center/100% 100% no-repeat;
+  height: 500px;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 1199px) {
+  .image2 {
+    background: #565656 url("/img/image2m.jpg") top center/100% 100% no-repeat;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .image2 {
+    background: #565656 url("/img/image2s.jpg") top center/100% 100% no-repeat;
+    height: 300px;
+    margin-bottom: 70px;
+  }
+}
+
+.image3 {
+  background: #565656 url("/img/image3b.jpg") top center/100% 100% no-repeat;
+  height: 500px;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 1199px) {
+  .image3 {
+    background: #565656 url("/img/image3m.jpg") top center/100% 100% no-repeat;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .image3 {
+    background: #565656 url("/img/image3s.jpg") top center/100% 100% no-repeat;
+    height: 300px;
+    margin-bottom: 70px;
+  }
+}
+
+.image4 {
+  background: #565656 url("/img/image4b.jpg") top center/100% 100% no-repeat;
+  height: 500px;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 1199px) {
+  .image4 {
+    background: #565656 url("/img/image4m.jpg") top center/100% 100% no-repeat;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .image4 {
+    background: #565656 url("/img/image4s.jpg") top center/100% 100% no-repeat;
+    height: 300px;
+    margin-bottom: 70px;
+  }
+}
+
+.section-footer {
+  background: #F4F4F4;
+}
+.section-footer__title {
+  margin-bottom: 30px;
+  padding-top: 70px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .section-footer__title {
+    font-size: 32px;
+  }
+}
+.section-footer__tel {
+  margin-bottom: 15px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .section-footer__tel {
+    font-size: 18px;
+  }
+}
+.section-footer__mail {
+  margin-bottom: 25px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .section-footer__mail {
+    font-size: 18px;
+  }
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1199px) {
+  .footer-info {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-info {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section-footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.rights {
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .socials {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+.socials__list {
+  display: flex;
+  gap: 23px;
+  transition: 0.9 all;
+}
+
+.list-item:hover use {
+  fill: #fff;
+}
+
+.list-item {
+  border: 1px solid #565656;
+  padding: 13px;
+  background: #F4F4F4;
+}
+
+.list-item:hover {
+  background: #000000;
+}/*# sourceMappingURL=main.css.map */
