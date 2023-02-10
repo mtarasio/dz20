@@ -228,6 +228,7 @@ image {
 }
 
 .title {
+  margin-bottom: 70px;
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 600;
@@ -239,11 +240,13 @@ image {
 @media screen and (max-width: 1199px) {
   .title {
     font-size: 33px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
   .title {
     font-size: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -282,76 +285,76 @@ image {
 }
 
 .image1 {
-  background: #565656 url("/img/image1b.jpg") top center/100% 100% no-repeat;
+  background: #565656 url("../img/image1b.jpg") top center/100% 100% no-repeat;
   height: 500px;
   margin-bottom: 90px;
 }
 @media screen and (max-width: 1199px) {
   .image1 {
-    background: #565656 url("/img/image1m.jpg") top center/100% 100% no-repeat;
+    background: #565656 url("../img/image1m.jpg") top center/100% 100% no-repeat;
     height: 380px;
   }
 }
 @media screen and (max-width: 767px) {
   .image1 {
-    background: #565656 url("/img/image1s.jpg") top center/100% 100% no-repeat;
+    background: #565656 url("../img/image1s.jpg") top center/100% 100% no-repeat;
     height: 300px;
     margin-bottom: 70px;
   }
 }
 
 .image2 {
-  background: #565656 url("/img/image2b.jpg") top center/100% 100% no-repeat;
+  background: #565656 url("../img/image2b.jpg") top center/100% 100% no-repeat;
   height: 500px;
   margin-bottom: 90px;
 }
 @media screen and (max-width: 1199px) {
   .image2 {
-    background: #565656 url("/img/image2m.jpg") top center/100% 100% no-repeat;
+    background: #565656 url("../img/image2m.jpg") top center/100% 100% no-repeat;
     height: 380px;
   }
 }
 @media screen and (max-width: 767px) {
   .image2 {
-    background: #565656 url("/img/image2s.jpg") top center/100% 100% no-repeat;
+    background: #565656 url("../img/image2s.jpg") top center/100% 100% no-repeat;
     height: 300px;
     margin-bottom: 70px;
   }
 }
 
 .image3 {
-  background: #565656 url("/img/image3b.jpg") top center/100% 100% no-repeat;
+  background: #565656 url("../img/image3b.jpg") top center/100% 100% no-repeat;
   height: 500px;
   margin-bottom: 90px;
 }
 @media screen and (max-width: 1199px) {
   .image3 {
-    background: #565656 url("/img/image3m.jpg") top center/100% 100% no-repeat;
+    background: #565656 url("../img/image3m.jpg") top center/100% 100% no-repeat;
     height: 380px;
   }
 }
 @media screen and (max-width: 767px) {
   .image3 {
-    background: #565656 url("/img/image3s.jpg") top center/100% 100% no-repeat;
+    background: #565656 url("../img/image3s.jpg") top center/100% 100% no-repeat;
     height: 300px;
     margin-bottom: 70px;
   }
 }
 
 .image4 {
-  background: #565656 url("/img/image4b.jpg") top center/100% 100% no-repeat;
+  background: #565656 url("../img/image4b.jpg") top center/100% 100% no-repeat;
   height: 500px;
   margin-bottom: 90px;
 }
 @media screen and (max-width: 1199px) {
   .image4 {
-    background: #565656 url("/img/image4m.jpg") top center/100% 100% no-repeat;
+    background: #565656 url("../img/image4m.jpg") top center/100% 100% no-repeat;
     height: 380px;
   }
 }
 @media screen and (max-width: 767px) {
   .image4 {
-    background: #565656 url("/img/image4s.jpg") top center/100% 100% no-repeat;
+    background: #565656 url("../img/image4s.jpg") top center/100% 100% no-repeat;
     height: 300px;
     margin-bottom: 70px;
   }
